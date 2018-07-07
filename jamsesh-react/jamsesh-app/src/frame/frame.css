@@ -1,0 +1,45 @@
+/* HEADER */
+
+#masterhead {
+  width: 100%;
+  height: 80px;
+  background: black;
+  color: white;
+}
+
+#logo {
+  float: left;
+  margin-left: 75px;
+  margin-top: 30px;
+}
+
+#startup {
+  float: right;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+#signup {
+  width: 80px;
+  height: 20px;
+}
+
+#login {
+  height: 20px;
+  width: 80px;
+}
+
+/* FOOTER */
+
+#masterfoot {
+width: 100%;
+background: black;
+color: white;
+bottom: 0;
+position: fixed;
+height: 80px;
+}
+
+#footertext {
+  margin-top: 35px;
+}

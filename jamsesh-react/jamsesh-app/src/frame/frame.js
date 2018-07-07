@@ -1,4 +1,5 @@
 import React from 'react';
+import './frame.css';
 
 class frame extends React.Component {
   constructor(props) {
@@ -8,12 +9,15 @@ class frame extends React.Component {
     return (
       <div>
         <header id="masterhead">
+          <a href="home"><div id="logo">Logo</div></a>
+          <div id="startup">
           <button id="signup">Sign Up</button>
-          <div id="logo">Logo</div>
-          <button id="Login">Log In</button>
+          <br></br>
+          <button id="login">Log In</button>
+          </div>
         </header>
         {this.props.children}
-        <footer>{"© 2018 JAMSESH | ALL RIGHTS RESERVED"}</footer>
+        <footer id="masterfoot"><div id="footertext">© 2018 JAMSESH | ALL RIGHTS RESERVED</div></footer>
       </div>
     );
   }
