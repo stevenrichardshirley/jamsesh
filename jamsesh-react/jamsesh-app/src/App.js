@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import FrameOutline from './frame.js';
-import HomeAnimation from './home.js';
-import InstrumentsSelector from './instruments.js';
-import MusiciansBrowser from './musicians.js';
+import FrameOutline from './frame/frame.js';
+import HomeAnimation from './home/home.js';
+import InstrumentsSelector from './instruments/instruments.js';
+import MusiciansBrowser from './musicians/musicians.js';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 class App extends Component {
   render() {
