@@ -1,0 +1,12 @@
+.carousel-inner {
+    background-color: black;
+    align-content: center;
+  }
+a.carousel-control-prev{width: 8%}
+a.carousel-control-next{width: 8%}
+figure{
+    height: 400px;
+}
+#carouselExampleControls{
+    align-content: center;
+}
