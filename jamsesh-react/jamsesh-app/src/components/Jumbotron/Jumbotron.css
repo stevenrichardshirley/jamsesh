@@ -1,0 +1,216 @@
+
+@import url("https://fonts.googleapis.com/css?family=Unica+One");
+@-webkit-keyframes move {
+  100% {
+    -webkit-transform: rotate(var(--angle)) translate(0, 40px);
+            transform: rotate(var(--angle)) translate(0, 40px);
+  }
+}
+@keyframes move {
+  100% {
+    -webkit-transform: rotate(var(--angle)) translate(0, 40px);
+            transform: rotate(var(--angle)) translate(0, 40px);
+  }
+}
+.wave {
+  -webkit-transform-origin: 500px 500px;
+          transform-origin: 500px 500px;
+  opacity: 0.25;
+  -webkit-animation: move 1.5s linear infinite;
+          animation: move 1.5s linear infinite;
+  mix-blend-mode: screen;
+}
+.wave:nth-child(1) {
+  -webkit-animation-delay: -0.28125s;
+          animation-delay: -0.28125s;
+  fill: #ff6000;
+  --angle:22.5deg ;
+  -webkit-transform: rotate(22.5deg) translate(375px, 40px);
+          transform: rotate(22.5deg) translate(375px, 40px);
+}
+.wave:nth-child(2) {
+  -webkit-animation-delay: -0.5625s;
+          animation-delay: -0.5625s;
+  fill: #ffbf00;
+  --angle:45deg ;
+  -webkit-transform: rotate(45deg) translate(375px, 40px);
+          transform: rotate(45deg) translate(375px, 40px);
+}
+.wave:nth-child(3) {
+  -webkit-animation-delay: -0.84375s;
+          animation-delay: -0.84375s;
+  fill: #1100ff;
+  --angle:67.5deg ;
+  -webkit-transform: rotate(67.5deg) translate(375px, 40px);
+          transform: rotate(67.5deg) translate(375px, 40px);
+}
+.wave:nth-child(4) {
+  -webkit-animation-delay: -1.125s;
+          animation-delay: -1.125s;
+  fill: #0400ff;
+  --angle:90deg ;
+  -webkit-transform: rotate(90deg) translate(375px, 40px);
+          transform: rotate(90deg) translate(375px, 40px);
+}
+.wave:nth-child(5) {
+  -webkit-animation-delay: -1.40625s;
+          animation-delay: -1.40625s;
+  fill: #1900ff;
+  --angle:112.5deg ;
+  -webkit-transform: rotate(112.5deg) translate(375px, 40px);
+          transform: rotate(112.5deg) translate(375px, 40px);
+}
+.wave:nth-child(6) {
+  -webkit-animation-delay: -1.6875s;
+          animation-delay: -1.6875s;
+  fill: #0004ff;
+  --angle:135deg ;
+  -webkit-transform: rotate(135deg) translate(375px, 40px);
+          transform: rotate(135deg) translate(375px, 40px);
+}
+.wave:nth-child(7) {
+  -webkit-animation-delay: -1.96875s;
+          animation-delay: -1.96875s;
+  fill: #0026ff;
+  --angle:157.5deg ;
+  -webkit-transform: rotate(157.5deg) translate(375px, 40px);
+          transform: rotate(157.5deg) translate(375px, 40px);
+}
+.wave:nth-child(8) {
+  -webkit-animation-delay: -2.25s;
+          animation-delay: -2.25s;
+  fill: cyan;
+  --angle:180deg ;
+  -webkit-transform: rotate(180deg) translate(375px, 40px);
+          transform: rotate(180deg) translate(375px, 40px);
+}
+.wave:nth-child(9) {
+  -webkit-animation-delay: -2.53125s;
+          animation-delay: -2.53125s;
+  fill: #009fff;
+  --angle:202.5deg ;
+  -webkit-transform: rotate(202.5deg) translate(375px, 40px);
+          transform: rotate(202.5deg) translate(375px, 40px);
+}
+.wave:nth-child(10) {
+  -webkit-animation-delay: -2.8125s;
+          animation-delay: -2.8125s;
+  fill: #0040ff;
+  --angle:225deg ;
+  -webkit-transform: rotate(225deg) translate(375px, 40px);
+          transform: rotate(225deg) translate(375px, 40px);
+}
+.wave:nth-child(11) {
+  -webkit-animation-delay: -3.09375s;
+          animation-delay: -3.09375s;
+  fill: #2000ff;
+  --angle:247.5deg ;
+  -webkit-transform: rotate(247.5deg) translate(375px, 40px);
+          transform: rotate(247.5deg) translate(375px, 40px);
+}
+.wave:nth-child(12) {
+  -webkit-animation-delay: -3.375s;
+          animation-delay: -3.375s;
+  fill: #8000ff;
+  --angle:270deg ;
+  -webkit-transform: rotate(270deg) translate(375px, 40px);
+          transform: rotate(270deg) translate(375px, 40px);
+}
+.wave:nth-child(13) {
+  -webkit-animation-delay: -3.65625s;
+          animation-delay: -3.65625s;
+  fill: #3700ff;
+  --angle:292.5deg ;
+  -webkit-transform: rotate(292.5deg) translate(375px, 40px);
+          transform: rotate(292.5deg) translate(375px, 40px);
+}
+.wave:nth-child(14) {
+  -webkit-animation-delay: -3.9375s;
+          animation-delay: -3.9375s;
+  fill: #4c00ff;
+  --angle:315deg ;
+  -webkit-transform: rotate(315deg) translate(375px, 40px);
+          transform: rotate(315deg) translate(375px, 40px);
+}
+.wave:nth-child(15) {
+  -webkit-animation-delay: -4.21875s;
+          animation-delay: -4.21875s;
+  fill: #4400ff;
+  --angle:337.5deg ;
+  -webkit-transform: rotate(337.5deg) translate(375px, 40px);
+          transform: rotate(337.5deg) translate(375px, 40px);
+}
+.wave:nth-child(16) {
+  -webkit-animation-delay: -4.5s;
+          animation-delay: -4.5s;
+  fill: rgb(76, 0, 255);
+  --angle:360deg ;
+  -webkit-transform: rotate(360deg) translate(375px, 40px);
+          transform: rotate(360deg) translate(375px, 40px);
+}
+
+.circle {
+  -webkit-transform-origin: 500px 500px;
+          transform-origin: 500px 500px;
+  -webkit-animation: rotate 24s linear infinite;
+          animation: rotate 24s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*Page Setup*/
+svg {
+  width: 100vw;
+  height: 80vh;
+}
+
+body {
+  background: #243842;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  height: 10vh;
+  line-height: 10vh;
+  font-size: 8vh;
+  padding: 2.5vh;
+  margin: 0;
+  color: #f7e0d4;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  font-family: 'Unica One', cursive;
+}
+
+
+.header{
+	background-color: rgb(6, 215, 243);
+	position: relative;
+	width: 100%;
+}
+
+h1{
+	text-align: center;
+	font-size: 90px;
+	font-weight: bold;
+	padding: 90px 0 20px 0; 
+}
+
+h2{
+	text-align: center;
+	font-size: 25px;
+	padding-bottom: 40px;
+}
