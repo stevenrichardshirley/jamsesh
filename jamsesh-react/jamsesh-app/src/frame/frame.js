@@ -9,11 +9,10 @@ class frame extends React.Component {
     return (
       <div>
         <header id="masterhead">
-          <a href="home"><div id="logo">Logo</div></a>
+          <a href="home" id="jamlogo">J</a>
           <div id="startup">
-          <button id="signup">Sign Up</button>
-          <br></br>
-          <button id="login">Log In</button>
+          <a href=""><div id="signup">SIGN UP</div></a>
+          <a href=""><div id="login">LOG IN</div></a>
           </div>
         </header>
         {this.props.children}
