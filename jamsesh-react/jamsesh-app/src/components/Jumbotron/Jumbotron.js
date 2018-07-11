@@ -3,8 +3,10 @@ import React from "react";
 import "./Jumbotron.css";
 
 const Jumbotron = () => (
+    
 	<header className = "header">
-		<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1000">
+		
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1000">
 		<defs>
 		  <clippath id="world">
 			<circle cx="500" cy="500" r="450" stroke="none" fill="none"></circle>

@@ -1,5 +1,22 @@
 import React from 'react';
-
+import Svg,{
+  Circle,
+  Ellipse,
+  G,
+  LinearGradient,
+  RadialGradient,
+  Line,
+  Path,
+  Polygon,
+  Polyline,
+  Rect,
+  Symbol,
+  Text,
+  Use,
+  Defs,
+  Stop
+} from 'svgs';
+import Jumbotron from "../components/Jumbotron/Jumbotron.js";
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -7,7 +24,8 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <h1>HOME</h1>
+        <Jumbotron />
+        
       </div>
     );
   }
