@@ -1,4 +1,8 @@
 import React from 'react';
+import SimpleSlider from "../components/Carousel/Carousel.js";
+
+
+
 
 class Instruments extends React.Component {
   constructor(props) {
@@ -7,7 +11,7 @@ class Instruments extends React.Component {
   render() {
     return (
       <div>
-        <h1>INSTRUMENTS</h1>
+        <SimpleSlider />
       </div>
     );
   }
