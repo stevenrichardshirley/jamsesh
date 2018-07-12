@@ -5,7 +5,13 @@ import "./Jumbotron.css";
 const Jumbotron = () => (
     
 	<header className = "header">
-		
+	<p id="maintitle">
+ Find Muscians Near You!
+  <span>
+    Jamsesh
+  </span>
+  &mdash; Find, Friends, Music &mdash;
+</p>
         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1000">
 		<defs>
 		  <clippath id="world">
