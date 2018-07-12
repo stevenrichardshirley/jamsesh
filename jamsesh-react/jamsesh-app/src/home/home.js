@@ -25,7 +25,6 @@ class Home extends React.Component {
     return (
       <div>
         <Jumbotron />
-        
       </div>
     );
   }

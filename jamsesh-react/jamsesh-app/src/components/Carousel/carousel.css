@@ -1,12 +1,8 @@
-.carousel-inner {
+.slick-slider {
     background-color: black;
     align-content: center;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height:100%
   }
-a.carousel-control-prev{width: 8%}
-a.carousel-control-next{width: 8%}
-figure{
-    height: 400px;
-}
-#carouselExampleControls{
-    align-content: center;
-}
