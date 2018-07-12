@@ -23,7 +23,7 @@
 .wave:nth-child(1) {
   -webkit-animation-delay: -0.28125s;
           animation-delay: -0.28125s;
-  fill: #ff6000;
+  fill: #00ffdd;
   --angle:22.5deg ;
   -webkit-transform: rotate(22.5deg) translate(375px, 40px);
           transform: rotate(22.5deg) translate(375px, 40px);
@@ -31,7 +31,7 @@
 .wave:nth-child(2) {
   -webkit-animation-delay: -0.5625s;
           animation-delay: -0.5625s;
-  fill: #ffbf00;
+  fill: #00ffff;
   --angle:45deg ;
   -webkit-transform: rotate(45deg) translate(375px, 40px);
           transform: rotate(45deg) translate(375px, 40px);
@@ -63,7 +63,7 @@
 .wave:nth-child(6) {
   -webkit-animation-delay: -1.6875s;
           animation-delay: -1.6875s;
-  fill: #0004ff;
+  fill: #00ffdd;
   --angle:135deg ;
   -webkit-transform: rotate(135deg) translate(375px, 40px);
           transform: rotate(135deg) translate(375px, 40px);
@@ -79,7 +79,7 @@
 .wave:nth-child(8) {
   -webkit-animation-delay: -2.25s;
           animation-delay: -2.25s;
-  fill: cyan;
+  fill:#8000ff;
   --angle:180deg ;
   -webkit-transform: rotate(180deg) translate(375px, 40px);
           transform: rotate(180deg) translate(375px, 40px);
@@ -87,7 +87,7 @@
 .wave:nth-child(9) {
   -webkit-animation-delay: -2.53125s;
           animation-delay: -2.53125s;
-  fill: #009fff;
+  fill: #00ffdd;
   --angle:202.5deg ;
   -webkit-transform: rotate(202.5deg) translate(375px, 40px);
           transform: rotate(202.5deg) translate(375px, 40px);
@@ -103,7 +103,7 @@
 .wave:nth-child(11) {
   -webkit-animation-delay: -3.09375s;
           animation-delay: -3.09375s;
-  fill: #2000ff;
+  fill: #8000ff;
   --angle:247.5deg ;
   -webkit-transform: rotate(247.5deg) translate(375px, 40px);
           transform: rotate(247.5deg) translate(375px, 40px);
@@ -178,13 +178,62 @@ svg {
 
 
 
+#maintitle {
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double rgba(255,255,255,.25);
+	border-width: 4px 0;
+	padding: 1.5em 0em;
+	position: absolute;
+	top: 18%;
+	left: 50%;
+	width: 40em;
+        margin: 0 0 0 -20em;
+        font: 400 1em/1.5 "Neuton"; background: transparent; color: rgba(255,255,255,.25); 
+}
+  span {
+
+  	font: 700 4em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+  	
+
+/* Clip Background Image */
+
+	  background: url(water1.jpeg) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 10s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
 .title {
   height: 10vh;
   line-height: 10vh;
   font-size: 8vh;
   padding: 2.5vh;
   margin: 0;
-  color: #f7e0d4;
+  color: #000000;
   border-top: 1px solid;
   border-bottom: 1px solid;
   font-family: 'Unica One', cursive;
