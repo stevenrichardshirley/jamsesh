@@ -3,15 +3,20 @@ import React from "react";
 import "./Jumbotron.css";
 
 const Jumbotron = () => (
-    
+
 	<header className = "header">
-	<p id="maintitle">
- Find Muscians Near You!
-  <span>
-    Jamsesh
-  </span>
-  &mdash; Find, Friends, Music &mdash;
-</p>
+    <section id="titlecont">
+    <div id="mastertitle">
+      <p id="jamtitle">JAM<strong id="blackbold">SESH</strong></p>
+    </div>
+    <div id="peontitle">
+      <p>Find your</p>
+      <br></br>
+      <p>shade of color</p>
+      <br></br>
+      <p>in music.</p>
+    </div>
+  </section>
         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1000">
 		<defs>
 		  <clippath id="world">
