@@ -1,5 +1,6 @@
-
 @import url("https://fonts.googleapis.com/css?family=Unica+One");
+@import url("https://fonts.googleapis.com/css?family=Concert+One%7COrbitron");
+
 @-webkit-keyframes move {
   100% {
     -webkit-transform: rotate(var(--angle)) translate(0, 40px);
@@ -176,48 +177,56 @@ svg {
   z-index: 100;
 }
 
-
-
-#maintitle {
+#mastertitle {
 	text-transform: uppercase;
-	letter-spacing: .5em;
-	display: inline-block;
-	border: 4px double rgba(255,255,255,.25);
-	border-width: 4px 0;
-	padding: 1.5em 0em;
+	letter-spacing: .9em;
 	position: absolute;
-	top: 18%;
-	left: 50%;
+  left: 7%;
+  top: 16.9%;
 	width: 40em;
-        margin: 0 0 0 -20em;
-        font: 400 1em/1.5 "Neuton"; background: transparent; color: rgba(255,255,255,.25); 
+  font: 400 1em/1.5 "orbitron";
 }
-  span {
 
-  	font: 700 4em/1 "Oswald", sans-serif;
-  	letter-spacing: 0;
-  	padding: .25em 0 .325em;
-	  display: block;
-	  margin: 0 auto;
-  	
+#peontitle {
+  text-transform: uppercase;
+  letter-spacing: .45em;
+  position: absolute;
+  top: 22%;
+  right: 5%;
+  width: 40em;
+  font: 400 1em/1.5 "Neuton";
+  text-align: right;
+  color: white;
+  font-size: 25px;
+}
+
+#jamtitle {
+font-size: 120px;
+color: white;
+}
+
+#blackbold {
+  color: black;
+}
 
 /* Clip Background Image */
-
+/* span {
 	  background: url(water1.jpeg) repeat-y;
 	  -webkit-background-clip: text;
 	  background-clip: text;
+  }
 
 /* Animate Background Image */
 
-	  -webkit-text-fill-color: transparent;
-	  -webkit-animation: aitf 10s linear infinite;
+	  /* -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 10s linear infinite; */
 
 /* Activate hardware acceleration for smoother animations */
 
-	  -webkit-transform: translate3d(0,0,0);
-	  -webkit-backface-visibility: hidden;
+	  /* -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden; */
 
-  }
+
 
 
 /* Animate Background Image */
@@ -245,4 +254,3 @@ svg {
 	position: relative;
 	width: 100%;
 }
-
