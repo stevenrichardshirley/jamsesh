@@ -6,6 +6,7 @@ import Home from './home/home.js';
 import Instruments from './instruments/instruments.js';
 import Musicians from './musicians/musicians.js';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Card from './components/Card/card';
 class App extends Component {
   render() {
     return (
@@ -16,6 +17,7 @@ class App extends Component {
                 <Route path="/home" component={Home} />
                 <Route path="/instruments" component={Instruments} />
                 <Route path="/musicians" component={Musicians} />
+                <Route path="/api" component={Card} />
               </div>
             </Router>
         </Frame>
