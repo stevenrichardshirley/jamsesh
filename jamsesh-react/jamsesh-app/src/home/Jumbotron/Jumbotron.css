@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Unica+One");
-@import url("https://fonts.googleapis.com/css?family=Concert+One%7COrbitron");
 
+@import url("https://fonts.googleapis.com/css?family=Unica+One");
 @-webkit-keyframes move {
   100% {
     -webkit-transform: rotate(var(--angle)) translate(0, 40px);
@@ -24,7 +23,7 @@
 .wave:nth-child(1) {
   -webkit-animation-delay: -0.28125s;
           animation-delay: -0.28125s;
-  fill: #00ffdd;
+  fill: #ff6000;
   --angle:22.5deg ;
   -webkit-transform: rotate(22.5deg) translate(375px, 40px);
           transform: rotate(22.5deg) translate(375px, 40px);
@@ -32,7 +31,7 @@
 .wave:nth-child(2) {
   -webkit-animation-delay: -0.5625s;
           animation-delay: -0.5625s;
-  fill: #00ffff;
+  fill: #ffbf00;
   --angle:45deg ;
   -webkit-transform: rotate(45deg) translate(375px, 40px);
           transform: rotate(45deg) translate(375px, 40px);
@@ -64,7 +63,7 @@
 .wave:nth-child(6) {
   -webkit-animation-delay: -1.6875s;
           animation-delay: -1.6875s;
-  fill: #00ffdd;
+  fill: #0004ff;
   --angle:135deg ;
   -webkit-transform: rotate(135deg) translate(375px, 40px);
           transform: rotate(135deg) translate(375px, 40px);
@@ -80,7 +79,7 @@
 .wave:nth-child(8) {
   -webkit-animation-delay: -2.25s;
           animation-delay: -2.25s;
-  fill:#8000ff;
+  fill: cyan;
   --angle:180deg ;
   -webkit-transform: rotate(180deg) translate(375px, 40px);
           transform: rotate(180deg) translate(375px, 40px);
@@ -88,7 +87,7 @@
 .wave:nth-child(9) {
   -webkit-animation-delay: -2.53125s;
           animation-delay: -2.53125s;
-  fill: #00ffdd;
+  fill: #009fff;
   --angle:202.5deg ;
   -webkit-transform: rotate(202.5deg) translate(375px, 40px);
           transform: rotate(202.5deg) translate(375px, 40px);
@@ -104,7 +103,7 @@
 .wave:nth-child(11) {
   -webkit-animation-delay: -3.09375s;
           animation-delay: -3.09375s;
-  fill: #8000ff;
+  fill: #2000ff;
   --angle:247.5deg ;
   -webkit-transform: rotate(247.5deg) translate(375px, 40px);
           transform: rotate(247.5deg) translate(375px, 40px);
@@ -177,72 +176,13 @@ svg {
   z-index: 100;
 }
 
-#mastertitle {
-	text-transform: uppercase;
-	letter-spacing: .9em;
-	position: absolute;
-  left: 7%;
-  top: 16.9%;
-	width: 40em;
-  font: 400 1em/1.5 "orbitron";
-}
-
-#peontitle {
-  text-transform: uppercase;
-  letter-spacing: .45em;
-  position: absolute;
-  top: 22%;
-  right: 5%;
-  width: 40em;
-  font: 400 1em/1.5 "Neuton";
-  text-align: right;
-  color: white;
-  font-size: 25px;
-}
-
-#jamtitle {
-font-size: 120px;
-color: white;
-}
-
-#blackbold {
-  color: black;
-}
-
-/* Clip Background Image */
-/* span {
-	  background: url(water1.jpeg) repeat-y;
-	  -webkit-background-clip: text;
-	  background-clip: text;
-  }
-
-/* Animate Background Image */
-
-	  /* -webkit-text-fill-color: transparent;
-	  -webkit-animation: aitf 10s linear infinite; */
-
-/* Activate hardware acceleration for smoother animations */
-
-	  /* -webkit-transform: translate3d(0,0,0);
-	  -webkit-backface-visibility: hidden; */
-
-
-
-
-/* Animate Background Image */
-
-@-webkit-keyframes aitf {
-	0% { background-position: 0% 50%; }
-	100% { background-position: 100% 50%; }
-}
-
 .title {
   height: 10vh;
   line-height: 10vh;
   font-size: 8vh;
   padding: 2.5vh;
   margin: 0;
-  color: #000000;
+  color: #f7e0d4;
   border-top: 1px solid;
   border-bottom: 1px solid;
   font-family: 'Unica One', cursive;
@@ -250,7 +190,25 @@ color: white;
 
 
 .header{
-	background-color:transparent;
+	background-color: rgb(6, 215, 243);
 	position: relative;
 	width: 100%;
+}
+
+h1{
+	text-align: center;
+	font-size: 90px;
+	font-weight: bold;
+	padding: 90px 0 20px 0;
+}
+
+h2{
+	text-align: center;
+	font-size: 25px;
+	padding-bottom: 40px;
+}
+
+#mastertitle {
+  width: 500px;
+  height: 700px;
 }

@@ -3,21 +3,15 @@ import React from "react";
 import "./Jumbotron.css";
 
 const Jumbotron = () => (
-
 	<header className = "header">
-    <section id="titlecont">
-    <div id="mastertitle">
-      <p id="jamtitle">JAM<strong id="blackbold">SESH</strong></p>
-    </div>
-    <div id="peontitle">
-      <p>Find your</p>
-      <br></br>
-      <p>shade of color</p>
-      <br></br>
-      <p>in music.</p>
-    </div>
-  </section>
-        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1000">
+		<div id="mastertitle">
+		<p id="jam">JAM</p>
+		<p id="sesh">SESH</p>
+		</div>
+		<div id="peontitle">
+			<p>Find your shade of color in music.</p>
+		</div>
+		<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1000">
 		<defs>
 		  <clippath id="world">
 			<circle cx="500" cy="500" r="450" stroke="none" fill="none"></circle>
