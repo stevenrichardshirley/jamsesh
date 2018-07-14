@@ -30,15 +30,18 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDYc_Phs9I-6OQYRdcvmPPi9AJXNOYiE1I",
+    authDomain: "jamsesh-68d39.firebaseapp.com",
+    databaseURL: "https://jamsesh-68d39.firebaseio.com",
+    projectId: "jamsesh-68d39",
+    storageBucket: "jamsesh-68d39.appspot.com",
+    messagingSenderId: "500614187735"
+  };
+  firebase.initializeApp(config);
+</script>
   </body>
 </html>
