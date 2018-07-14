@@ -26,7 +26,7 @@ const uiConfig = {
 };
 
 
-class frame extends React.Component {
+class Frame extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -49,4 +49,4 @@ class frame extends React.Component {
   }
 }
 
-export default frame
+export default Frame
