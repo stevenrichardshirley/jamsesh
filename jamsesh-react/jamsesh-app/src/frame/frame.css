@@ -31,8 +31,9 @@
 }
 
 #startup {
+  display: flex;
+  align-items: center;
   float: right;
-  margin-right: 50px;
   margin-top: 7px;
 }
 
@@ -52,10 +53,6 @@
   border-radius: 7px;
 }
 
-#loginwrap {
-  margin-top: 7px;
-}
-
 #login {
   width: 80px;
   height: 20px;
@@ -65,6 +62,10 @@
   padding-left: 5px;
   padding-right: 5px;
   border-radius: 7px;
+}
+StyledFirebaseAuth {
+  align-self: flex-start;
+  float: left;
 }
 
 /* FOOTER */
