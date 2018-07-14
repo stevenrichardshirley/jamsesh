@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import "./carousel.css";
-import Card from "../card/card.js";
+import Card from "../Card/card.js";
 
 class SimpleSlider extends React.Component {
   render() {
