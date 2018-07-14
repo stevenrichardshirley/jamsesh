@@ -1,4 +1,7 @@
 import React from 'react';
+import SimpleSlider from "../components/Carousel/carousel.js";
+import slider from '../../node_modules/react-slick/lib/slider';
+
 
 class Musicians extends React.Component {
   constructor(props) {
@@ -6,9 +9,7 @@ class Musicians extends React.Component {
   }
   render() {
     return (
-      <div>
-        <h1>MUSICIANS</h1>
-      </div>
+    <SimpleSlider />
     );
   }
 }
