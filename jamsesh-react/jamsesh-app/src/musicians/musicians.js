@@ -1,9 +1,9 @@
 import React from 'react';
-import SimpleSlider from "../components/Carousel/carousel.js";
+import SimpleSlider from "../components/Carousel/Carousel.js";
 import slider from '../../node_modules/react-slick/lib/slider';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from 'firebase';
-import axios from"axios"
+import axios from "axios";
 
 
 class Musicians extends React.Component {
@@ -25,7 +25,7 @@ class Musicians extends React.Component {
     }
     console.log("foo");
     var signUpData = firebase.database();
-     
+
     console.log("This far?");
     // signUpData.ref().on("value", function(childSnapshot, prevChildKey){
     //     childSnapshot.forEach(function(childSnapshot) {
@@ -46,9 +46,9 @@ class Musicians extends React.Component {
           }
           ziptest();
     //     })
-    // }); 
+    // });
   }
-  
+
 
   render() {
     return (

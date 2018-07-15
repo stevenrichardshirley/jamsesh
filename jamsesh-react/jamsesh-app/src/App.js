@@ -6,7 +6,7 @@ import Home from './home/home.js';
 import Instruments from './instruments/instruments.js';
 import Musicians from './musicians/musicians.js';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Card from './components/Card/card';
+import Card from './components/Card/card.js';
 class App extends Component {
   render() {
     return (
