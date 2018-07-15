@@ -1,5 +1,5 @@
 import React from 'react';
-import SimpleSlider from "../components/Carousel/carousel.js";
+import SimpleSlider from "../components/Carousel/Carousel.js";
 
 
 

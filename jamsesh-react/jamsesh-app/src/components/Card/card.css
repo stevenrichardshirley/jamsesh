@@ -7,7 +7,6 @@
 .card { background-color: #141414 ;
   font-family: 'Open Sans', Arial, sans-serif;
   position: relative;
-  float: left;
   overflow: hidden;
   margin: 10px 1%;
   min-width: 255px;
@@ -16,7 +15,7 @@
   color: #ffffff;
   text-align: center;
   line-height: 1.4em;
- 
+  display: inline-block;
 }
 .card .background {
   width: 100%;
@@ -29,10 +28,10 @@
   transition: all 2s ease;
 }
 .card figcaption {
-  width: 100%;
+  display: inline-block;
   padding: 15px 25px;
   position: absolute;
-  left: 0;
+  left: 20%;
   top: 50%;
 }
 .card .profile {

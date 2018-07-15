@@ -15,23 +15,34 @@ class SimpleSlider extends React.Component {
     return (
       <Slider {...settings}>
         <div>
-          <Card />
-          <Card />
+          <Card class="cards"></Card>
+          <Card class="cards"></Card>
+          <Card class="cards"></Card>
         </div>
         <div>
-          <h3>2</h3>
+          <Card class="cards"></Card>
+          <Card class="cards"></Card>
+          <Card class="cards"></Card>
         </div>
         <div>
-          <h3>3</h3>
+          <Card class="cards"></Card>
+          <Card class="cards"></Card>
+          <Card class="cards"></Card>
         </div>
         <div>
-          <h3>4</h3>
+          <Card class="cards"></Card>
+          <Card class="cards"></Card>
+          <Card class="cards"></Card>
         </div>
         <div>
-          <h3>5</h3>
+            <Card class="cards"></Card>
+            <Card class="cards"></Card>
+            <Card class="cards"></Card>
         </div>
         <div>
-          <h3>6</h3>
+          <Card class="cards"></Card>
+          <Card class="cards"></Card>
+          <Card class="cards"></Card>
         </div>
       </Slider>
     );
