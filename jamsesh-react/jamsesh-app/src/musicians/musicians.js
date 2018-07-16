@@ -1,5 +1,5 @@
 import React from 'react';
-import SimpleSlider from "../components/Carousel/Carousel.js";
+import SimpleSlider from "../components/CarouselMusician/Carousel.js";
 import slider from '../../node_modules/react-slick/lib/slider';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from 'firebase';
@@ -23,10 +23,9 @@ class Musicians extends React.Component {
     if (!firebase.app.length){
     firebase.initializeApp(config);
     }
-    console.log("foo");
+    
     var signUpData = firebase.database();
 
-    console.log("This far?");
     // signUpData.ref().on("value", function(childSnapshot, prevChildKey){
     //     childSnapshot.forEach(function(childSnapshot) {
     //       var childData = childSnapshot.val();
