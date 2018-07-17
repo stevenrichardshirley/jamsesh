@@ -63,20 +63,27 @@
   padding-right: 5px;
   border-radius: 7px;
 }
-StyledFirebaseAuth {
-  align-self: flex-start;
-  float: left;
+.firebaseui-idp-button {
+  width: 80px;
+  height: 20px;
+  border: solid white 2px;
+  color: black;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 7px;
 }
+
 
 /* FOOTER */
 
 #masterfoot {
-width: 100%;
 background: black;
 color: white;
 bottom: 0;
 position: fixed;
 height: 80px;
+width: 100%;
 }
 
 #footertext {

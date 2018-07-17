@@ -4,20 +4,14 @@
     color: white;
     margin-top: 1%;
     margin-bottom: 1%;
-    height:55px
+    height:55px;
   }
 
-  .instrumentselector {
-    
-    align-content: center;
-  }
 
-  .InstImage{
-    margin-left: 22.5%;
-    width: 55%;
-    z-index:-100;;
-  }
-  li{
-    size:72px
+  .InstImage {
+    margin-left: 31.5%;
+    border-radius: 75%;
+    width: 500px;
+    height: 500px;
   }
 
