@@ -3,6 +3,10 @@ import './frame.css';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from 'firebase';
 
+
+
+
+
   const config = {
     apiKey: "AIzaSyDYc_Phs9I-6OQYRdcvmPPi9AJXNOYiE1I",
     authDomain: "jamsesh-68d39.firebaseapp.com",

@@ -1,0 +1,18 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\jamsesh-react",
+    "\\jamsesh-react\\jamsesh-app",
+    "\\jamsesh-react\\jamsesh-app\\functions",
+    "\\jamsesh-react\\jamsesh-app\\public",
+    "\\jamsesh-react\\jamsesh-app\\src",
+    "\\jamsesh-react\\jamsesh-app\\src\\components",
+    "\\jamsesh-react\\jamsesh-app\\src\\frame",
+    "\\jamsesh-react\\jamsesh-app\\src\\home",
+    "\\jamsesh-react\\jamsesh-app\\src\\instruments",
+    "\\jamsesh-react\\jamsesh-app\\src\\musicians",
+    "\\jamsesh-react\\jamsesh-app\\src\\pages"
+  ],
+  "SelectedNode": "\\jamsesh-react\\jamsesh-app\\src\\frame\\frame.js",
+  "PreviewInSolutionExplorer": false
+}

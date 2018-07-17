@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "jamsesh-68d39"
+    "default": "jamsesh-68d39",
+    "Jamsesh": "jamsesh-68d39"
   }
 }
