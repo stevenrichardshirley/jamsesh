@@ -19,19 +19,19 @@ class SimpleSlider extends React.Component {
     return (
       <Slider {...settings}>
         <div>
-          <a class="instrumentselector"><img class="InstImage" src={guitar}></img></a>
+          <a class="guitar"><img class="InstImage" src={guitar}></img></a>
         </div>
         <div>
-          <a class="instrumentselector"><img class="InstImage" src={drumset}></img></a>
+          <a class="drumset"><img class="InstImage" src={drumset}></img></a>
         </div>
         <div>
-          <a class="instrumentselector"><img class="InstImage" src={mic}></img></a>
+          <a class="mic"><img class="InstImage" src={mic}></img></a>
         </div>
         <div>
-          <a class="instrumentselector"><img class="InstImage" src={keyboard}></img></a>
+          <a class="keyboard"><img class="InstImage" src={keyboard}></img></a>
         </div>
         <div>
-          <a class="instrumentselector"><img class="InstImage" src={bass}></img></a>
+          <a class="bass"><img class="InstImage" src={bass}></img></a>
         </div>
       </Slider>
     );
