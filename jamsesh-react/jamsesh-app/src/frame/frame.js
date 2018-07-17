@@ -3,6 +3,10 @@ import './frame.css';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from 'firebase';
 
+
+
+
+
   const config = {
     apiKey: "AIzaSyDYc_Phs9I-6OQYRdcvmPPi9AJXNOYiE1I",
     authDomain: "jamsesh-68d39.firebaseapp.com",
@@ -26,7 +30,7 @@ const uiConfig = {
 };
 
 
-class frame extends React.Component {
+class Frame extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -34,12 +38,11 @@ class frame extends React.Component {
     return (
       <div>
         <header id="masterhead">
-          <a href="home" id="jamlogo" class="hvr-back-pulse">J</a>
+          <a href="home" id="jamlogo" className="hvr-back-pulse">J</a>
           <div id="startup">
-          <a href="" class="hvr-back-pulse" id="signup">SIGN UP</a>
-          <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()}/>
-          <br></br>
-        <div id="loginwrap"><a href="" class="hvr-back-pulse" id="login">LOG IN</a></div>
+            <a href="" className="hvr-back-pulse" id="signup">SIGN UP</a>
+            <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} className="hvr-back-pulse" id="login"/>
+            {/* <div id="loginwrap"><a href="" className="hvr-back-pulse" id="login">LOG IN</a></div> */}
           </div>
         </header>
         {this.props.children}
@@ -49,4 +52,4 @@ class frame extends React.Component {
   }
 }
 
-export default frame
+export default Frame
