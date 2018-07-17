@@ -5,6 +5,7 @@ import Frame from './frame/frame.js';
 import Home from './home/home.js';
 import Instruments from './instruments/instruments.js';
 import Musicians from './musicians/musicians.js';
+import Checkbox from './components/checkbox/checkbox.js';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Card from './components/Card/card.js';
 class App extends Component {
@@ -17,8 +18,9 @@ class App extends Component {
                 <Route path="/home" component={Home} />
                 <Route path="/instruments" component={Instruments} />
                 <Route path="/musicians" component={Musicians} />
+                <Route path="/signedIn" component ={Checkbox} />    
                 <Route path="/api" component={Card} />
-              </div>
+      </div>
             </Router>
         </Frame>
       </div>
