@@ -17,6 +17,7 @@
     "react-scripts": "1.1.4",
     "react-slick": "^0.23.1",
     "reactstrap": "^6.3.0",
+    "redux": "^4.0.0",
     "svgs": "^3.2.1"
   },
   "scripts": {

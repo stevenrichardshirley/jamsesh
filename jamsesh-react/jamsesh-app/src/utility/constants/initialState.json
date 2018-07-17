@@ -1,0 +1,36 @@
+{
+    "addresses":    [
+    {
+    "city":"Dallas"
+    }     
+    ],
+    "birthdays":
+    [    
+    ],
+    "coverPhotos":
+    [
+    ],
+    "photos":
+    [
+    ],
+    "nicknames":
+    [
+    {
+    "value":"MammaJama"
+    }   
+    ],
+    "interests":
+    [
+    {
+    "value":"Drums"    
+    }
+    ],
+    "errors":[], 
+    "memberNames":{
+        "fetching": false         
+    },
+    "Instruments":{
+        "fetching":false,
+        "suggestions":["keyboard","vocals","drums","guitar","bass" ]
+    }
+}
