@@ -78,12 +78,12 @@
 /* FOOTER */
 
 #masterfoot {
-width: 100%;
 background: black;
 color: white;
 bottom: 0;
 position: fixed;
 height: 80px;
+width: 100%;
 }
 
 #footertext {
