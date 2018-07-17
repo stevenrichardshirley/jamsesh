@@ -15,11 +15,11 @@ class App extends Component {
         <Frame>
           <Router>
               <div>
-                <Route path="/home" component={Home} />
-                <Route path="/instruments" component={Instruments} />
-                <Route path="/musicians" component={Musicians} />
-                <Route path="/signedin" component ={Checkbox} />
-                <Route path="/api" component={Card} />
+                <Route exact path="/" component={Home} />
+                <Route exact path="/instruments" component={Instruments} />
+                <Route exact path="/musicians" component={Musicians} />
+                <Route exact path="/signedin" component ={Checkbox} />
+                <Route exact path="/api" component={Card} />
       </div>
             </Router>
         </Frame>
