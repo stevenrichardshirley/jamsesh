@@ -14,6 +14,10 @@
 
   .InstImage{
     margin-left: 22.5%;
-    width: 55%
+    width: 55%;
+    z-index:-100;;
   }
-  
+  li{
+    size:72px
+  }
+

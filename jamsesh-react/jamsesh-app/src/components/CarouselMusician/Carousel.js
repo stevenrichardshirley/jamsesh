@@ -5,13 +5,18 @@ import Card from "../Card/card.js";
 
 class SimpleSlider extends React.Component {
   render() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
+    
+      var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: false,
+        arrows: false,
+        centermode: false,
+      };
+    
     return (
       <Slider {...settings}>
         <div>
