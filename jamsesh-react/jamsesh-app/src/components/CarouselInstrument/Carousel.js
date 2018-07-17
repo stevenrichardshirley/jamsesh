@@ -8,30 +8,47 @@ import keyboard from "./instrumentimages/keyboard.jpg"
 import bass from "./instrumentimages/bass.jpg"
 
 class SimpleSlider extends React.Component {
+
+   Save=(e)=>{
+     e.stopPropagation();
+     console.log(e.target.id);
+  }
+
+
+
+
+
+
+
+
+
   render() {
     var settings = {
       dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      draggable: false,
+      arrows: false,
+      centermode: false,
     };
     return (
       <Slider {...settings}>
         <div>
-          <a class="guitar"><img class="InstImage" src={guitar}></img></a>
+          <a><img class="InstImage" id="guitar" onClick={this.Save} src={guitar}></img></a>
         </div>
         <div>
-          <a class="drumset"><img class="InstImage" src={drumset}></img></a>
+          <a><img class="InstImage" id="drumset" onClick={this.Save} src={drumset}></img></a>
         </div>
         <div>
-          <a class="mic"><img class="InstImage" src={mic}></img></a>
+          <a><img class="InstImage" id="mic" onClick={this.Save} src={mic}></img></a>
         </div>
         <div>
-          <a class="keyboard"><img class="InstImage" src={keyboard}></img></a>
+          <a><img class="InstImage" id="keyboard" onClick={this.Save} src={keyboard}></img></a>
         </div>
         <div>
-          <a class="bass"><img class="InstImage" src={bass}></img></a>
+          <a><img class="InstImage" id="bass" onClick={this.Save} src={bass}></img></a>
         </div>
       </Slider>
     );
