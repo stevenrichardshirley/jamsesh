@@ -18,7 +18,7 @@ class App extends Component {
                 <Route path="/home" component={Home} />
                 <Route path="/instruments" component={Instruments} />
                 <Route path="/musicians" component={Musicians} />
-                <Route path="/signedIn" component ={Checkbox} />    
+                <Route path="/signedin" component ={Checkbox} />
                 <Route path="/api" component={Card} />
       </div>
             </Router>

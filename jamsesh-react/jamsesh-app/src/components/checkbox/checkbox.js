@@ -8,7 +8,7 @@ class Example extends React.Component {
   render() {
     return (
       <Form>
-        
+
         <Checkbox name="Vocals" label="Vocals" defaultChecked={true} />
         <Checkbox name="Drums" label="Drums" />
         <Checkbox name="Guitar" label="Guitar"  />
