@@ -38,9 +38,8 @@ class Frame extends React.Component {
     return (
       <div>
         <header id="masterhead">
-          <a href="home" id="jamlogo" className="hvr-back-pulse">J</a>
+          <a href="/" id="jamlogo" className="hvr-back-pulse">J</a>
           <div id="startup">
-            <a href="" className="hvr-back-pulse" id="signup">SIGN UP</a>
             <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} className="hvr-back-pulse" id="login"/>
             {/* <div id="loginwrap"><a href="" className="hvr-back-pulse" id="login">LOG IN</a></div> */}
           </div>
