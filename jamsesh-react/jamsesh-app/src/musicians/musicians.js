@@ -4,7 +4,8 @@ import slider from '../../node_modules/react-slick/lib/slider';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from 'firebase';
 import searchProfiles from './searchProfiles';
-import searchResults from  './searchResults'
+import searchResults from  './searchResults';
+import members from '../utility/api/profileSearch.json'
 import gapi from 'gapi-client';
 import axios from "axios";
 //import card from './src/components/card'
@@ -17,8 +18,8 @@ class Musicians extends React.Component {
   constructor(props) {
     super(props); 
     this.state = {
-      membername: "",
-      searchmember: [],
+      displayName: "",
+      id: [],
     }
   this.google = this.google.bind(this)
   }
@@ -28,14 +29,13 @@ class Musicians extends React.Component {
   componentDidMount() {
     this.google()
     const key = "AIzaSyDYc_Phs9I-6OQYRdcvmPPi9AJXNOYiE1I"
-    const fields = "&fields=kind,items(name,characteristics/length)"
-    const url = 'https://www.googleapis.com/discovery/v1/apis/api/version/rest?parameterskey=' + key +fields;
+    const url = 'T https://people.googleapis.com/v1/people/me?personFields=names&fields=names&key=' + key;
     
 
     axios.get(url)
       .then((response) =>{
         this.setState({
-          searchmember: response.searchdata.result
+          members
         })
       })
       .catch((error)=> console.log(error));
