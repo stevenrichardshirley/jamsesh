@@ -1,17 +1,20 @@
-.slick-slider {
-    background-color: black;
-    align-content: center;
-    color: white;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    height:55px;
-  }
 
+.instwrap {
+background: black;
+margin-top: 10px;
+height: 510px;
+}
 
   .InstImage {
-    margin-left: 31.5%;
+    text-align: center;
+    align-content: center;
     border-radius: 75%;
-    width: 500px;
-    height: 500px;
+    width: 250px;
+    height: 250px;
+    padding-left: 10px;
+    margin-top: 120px;
   }
 
+  .instbackground {
+
+  }

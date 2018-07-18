@@ -1,5 +1,5 @@
 .slick-slider {
-    background-color: black;
+    background: black;
     align-content: center;
     color: white;
     margin-top: 1%;
@@ -10,4 +10,3 @@
   .cards {
     text-align: center;
   }
-  

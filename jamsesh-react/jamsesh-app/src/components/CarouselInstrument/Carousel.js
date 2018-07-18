@@ -34,23 +34,23 @@ class SimpleSlider extends React.Component {
       centermode: false,
     };
     return (
-      <Slider {...settings}>
-        <div>
+      <section class="instbackground">
+        <div class="instwrap">
           <a href="musicians"><img class="InstImage" id="guitar" onClick={this.Save} src={guitar}></img></a>
-        </div>
-        <div>
+
+
           <a href="musicians"><img class="InstImage" id="drumset" onClick={this.Save} src={drumset}></img></a>
-        </div>
-        <div>
+
+
           <a href="musicians"><img class="InstImage" id="mic" onClick={this.Save} src={mic}></img></a>
-        </div>
-        <div>
+
+
           <a href="musicians"><img class="InstImage" id="keyboard" onClick={this.Save} src={keyboard}></img></a>
-        </div>
-        <div>
+
+
           <a href="musicians"><img class="InstImage" id="bass" onClick={this.Save} src={bass}></img></a>
-        </div>
-      </Slider>
+    </div>
+      </section>
     );
   }
 }
