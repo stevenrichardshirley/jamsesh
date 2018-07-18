@@ -1,4 +1,5 @@
 import React from 'react';
+import gapi from 'gapi-client';
 import $script from 'scriptjs';
 
 $script('https://apis.google.com/js/api.js', function () {
@@ -18,9 +19,10 @@ class apiDiscovery extends React.Component {
         'scope': 'profile',
       }).then(function() {
         // 3. Initialize and make the API request.
-        return gapi.client.request({
-          'path': 'https://people.googleapis.com/v1/people/me',
-        })
+        return gapi.client.people.people.get({
+          'resourceName': 'people/me',
+          'requestMask.includeField': 'person.names'
+        });
       }).then(function(response) {
         console.log(response.result);
       }, function(reason) {
