@@ -1,5 +1,4 @@
 import React from 'react';
-import gapi from 'gapi';
 import $script from 'scriptjs';
 
 $script('https://apis.google.com/js/api.js', function () {

@@ -6,10 +6,16 @@ import firebase from 'firebase';
 import axios from "axios";
 
 
+
+
+
 class Musicians extends React.Component {
   constructor(props) {
     super(props);
+    
+    
   }
+
   componentDidMount(){
     var finishData=[];
     var config = {
@@ -26,10 +32,10 @@ class Musicians extends React.Component {
     
     var signUpData = firebase.database();
 
-    // signUpData.ref().on("value", function(childSnapshot, prevChildKey){
-    //     childSnapshot.forEach(function(childSnapshot) {
-    //       var childData = childSnapshot.val();
-    //       finishData.push(childData);
+    signUpData.ref().on("value", function(childSnapshot, prevChildKey){
+        childSnapshot.forEach(function(childSnapshot) {
+         var childData = childSnapshot.val();
+         finishData.push(childData);
           function ziptest(){
             console.log(finishData);
             const zip2 = 75158;
@@ -44,12 +50,13 @@ class Musicians extends React.Component {
             });
           }
           ziptest();
-    //     })
-    // });
+         })
+   });
   }
 
 
   render() {
+    console.log("state",this.state)
     return (
     <SimpleSlider />
     );
