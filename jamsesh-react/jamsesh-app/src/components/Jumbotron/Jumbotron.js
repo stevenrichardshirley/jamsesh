@@ -10,11 +10,11 @@ const Jumbotron = () => (
       <p id="jamtitle">JAM<strong id="blackbold">SESH</strong></p>
     </div>
     <div id="peontitle">
-      <p>Find your</p>
+      <p>Bring your</p>
       <br></br>
       <p>shade of color</p>
       <br></br>
-      <p>in music.</p>
+      <p>to music.</p>
     </div>
   </section>
         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1000">
