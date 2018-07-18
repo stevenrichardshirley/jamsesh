@@ -5,7 +5,6 @@ import Frame from './frame/frame.js';
 import Home from './home/home.js';
 import Instruments from './instruments/instruments.js';
 import Musicians from './musicians/musicians.js';
-import Checkbox from './components/checkbox/checkbox.js';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Card from './components/Card/card.js';
 class App extends Component {
