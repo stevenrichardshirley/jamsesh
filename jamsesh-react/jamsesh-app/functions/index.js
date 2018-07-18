@@ -5,12 +5,12 @@ const admin = require('firebase-admin');
 admin.initializeApp();
 
 // Take the text parameter passed to this HTTP endpoint and insert it into the
-// Realtime Database under the path /messages/:pushId/original
-exports.addMessage = functions.https.onRequest((req, res) => {
+// Realtime Database under the path /api/:pushId/original
+exports.api = functions.https.onRequest((req, res) => {
     // Grab the text parameter.
     const original = req.query.text;
     // Push the new message into the Realtime Database using the Firebase Admin SDK.
-    return admin.database().ref('/messages').push({original: original}).then((snapshot) => {
+    return admin.database().ref('/api').push({original: original}).then((snapshot) => {
       // Redirect with 303 SEE OTHER to the URL of the pushed object in the Firebase console.
       return res.redirect(303, snapshot.ref.toString());
     });
@@ -23,7 +23,7 @@ function handleClientLoad() {
     gapi.load('client:auth2', initClient);
   }
 
-  function initClient() {
+  exports.initClient = function initClient() {
     // Initialize the client with API key and People API, and initialize OAuth with an
     // OAuth 2.0 client ID and scopes (space delimited string) to request access.
     gapi.client.init({
@@ -58,7 +58,7 @@ function handleClientLoad() {
     gapi.auth2.getAuthInstance().signOut();
   }
 
-  function makeApiCall() {
+  exports.makeApiCall = function makeApiCall() {
     // Make an API call to the People API, and print the user's given name.
     gapi.client.people.people.get({
       'resourceName': 'people/me',
