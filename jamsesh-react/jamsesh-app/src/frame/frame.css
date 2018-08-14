@@ -6,6 +6,7 @@
   height: 80px;
   background: black;
   color: white;
+  border-bottom: solid white 1px;
 }
 
 #masterhead a {
@@ -41,6 +42,23 @@
 #startup a:hover {
   color: black;
   background: white;
+}
+#button { 
+  margin-left: 60%;
+  margin-top : 10px;
+  height: 50px;
+  width: 80px;
+  border-radius: 20%;
+  font: 25px "orbitron";
+  color: white;
+  border: solid white 2px;
+  background: black;
+
+
+}
+#button a:hover {
+  background:white;
+  color: black;
 }
 
 /* #signup {
@@ -86,6 +104,7 @@ bottom: 0;
 position: fixed;
 height: 80px;
 width: 100%;
+border-top: solid white 1px;
 }
 
 #footertext {

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Frame from './frame/frame.js';
 import Home from './home/home.js';
+import signup from './components/signup/signup.js'
 import Instruments from './instruments/instruments.js';
 import Musicians from './musicians/musicians.js';
 import MusiciansBass from './musiciansbass/musicians.js';
@@ -11,7 +12,7 @@ import MusiciansKeyboard from './musicianskeyboard/musicians.js';
 import MusiciansDrums from './musiciansdrums/musicians.js';
 import MusiciansMic from './musiciansmic/musicians.js';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Card from './components/Card/card.js';
+import Card from './components/card/card.js';
 class App extends Component {
   render() {
     return (
@@ -27,6 +28,7 @@ class App extends Component {
                 <Route exact path="/musicians/drums" component={MusiciansDrums} />
                 <Route exact path="/musicians/keyboard" component={MusiciansKeyboard} />
                 <Route exact path="/musicians/mic" component={MusiciansMic} />
+                <Route exact path="/signedIn" component={signup}/>
                 <Route exact path="/api" component={Card} />
       </div>
             </Router>
