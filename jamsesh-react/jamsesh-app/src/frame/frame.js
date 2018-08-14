@@ -7,14 +7,14 @@ import firebase from 'firebase';
 
 
 
-  const config = {
-    apiKey: "AIzaSyDYc_Phs9I-6OQYRdcvmPPi9AJXNOYiE1I",
-    authDomain: "jamsesh-68d39.firebaseapp.com",
-    databaseURL: "https://jamsesh-68d39.firebaseio.com",
-    projectId: "jamsesh-68d39",
-    storageBucket: "jamsesh-68d39.appspot.com",
-    messagingSenderId: "500614187735"
-  };
+const config = {
+  apiKey: "AIzaSyA8j7FJgRdaFGdJVYskvUJO19O6O_RM_lw",
+  authDomain: "jamsesh-c43bb.firebaseapp.com",
+  databaseURL: "https://jamsesh-c43bb.firebaseio.com",
+  projectId: "jamsesh-c43bb",
+  storageBucket: "jamsesh-c43bb.appspot.com",
+  messagingSenderId: "84443028283"
+ };
   firebase.initializeApp(config);
 
   // Configure FirebaseUI.
@@ -39,6 +39,7 @@ class Frame extends React.Component {
       <div>
         <header id="masterhead">
           <a href="/" id="jamlogo" className="hvr-back-pulse">J</a>
+           <a href="/signedIn" id="button" className="hvr-back-pulse">Sign Up!</a>
           <div id="startup">
             <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} className="hvr-back-pulse" id="login"/>
             {/* <div id="loginwrap"><a href="" className="hvr-back-pulse" id="login">LOG IN</a></div> */}
