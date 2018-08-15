@@ -1,4 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Unica+One");
 
+body {
+  font-family: 'Unica One', cursive;
+}
 
 .App {
   text-align: center;

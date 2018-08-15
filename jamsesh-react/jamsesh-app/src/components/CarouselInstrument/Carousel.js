@@ -35,6 +35,7 @@ class SimpleSlider extends React.Component {
     };
     return (
       <section class="instbackground">
+        <h1 class="jamsubtitles">Choose an Instrument</h1>
         <div class="instwrap">
           <a href="musicians/guitar"><img class="InstImage" id="guitar" onClick={this.Save} src={guitar}></img></a>
 
