@@ -7,7 +7,35 @@ import Slider from "react-slick";
 
 
 class MusiciansGuitar extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      users: null
+    }
+  }
+  componentDidMount() {
+    firebase.database()
+      .ref('users')
+      .orderByChild('instrument')
+      .equalTo('guitar')
+      .on('value', (users) => {
+        this.setState({ users: users.val() })
+      })
+  }
   render() {
+    
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      draggable: false,
+      arrows: false,
+      centermode: false,
+    };
+
+
 
   // componentDidMount(){
   //   var finishData=[];
@@ -46,7 +74,29 @@ class MusiciansGuitar extends React.Component {
   //   //     })
   //   // });
   
-
+    const users = this.state.users
+    const guitarists = []
+    if (users) {
+      for (let p in users) {
+        if (users.hasOwnProperty(p)) {
+            // do stuff
+            const user = users[p]
+            guitarists.push(
+              <figure key={p} className="card">
+              <img src="https://images.pexels.com/photos/633432/pexels-photo-633432.jpeg?auto=compress&cs=tinysrgb&h=350" alt="profile-sample1" className="background"/>
+              <img src={user.photoUrl} height='150' width='150' alt="profile-sample1" className="profile"/>
+                <figcaption>
+                    <h3>{user.name}<span>Guitar</span></h3>
+                    <div className="icons">
+                      <a href="https://soundcloud.com/"> <i className="ion-headphone"></i></a>
+                      <a href={`mailto:${user.email}`}> <i className="ion-ios-email"></i></a>      
+                    </div>
+                </figcaption>
+            </figure>
+            )
+        }
+      }
+    }
 
   
     
@@ -64,33 +114,9 @@ class MusiciansGuitar extends React.Component {
     return (
       <Slider {...settings}>
       <div>
-      <figure className="card"><img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350" alt="profile-sample1" className="background"/><img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=350" alt="profile-sample1" className="profile"/>
-          <figcaption>
-              <h3>Howard Grasson<span>Guitar</span></h3>
-              <div className="icons">
-                <a href="https://soundcloud.com/"> <i className="ion-headphone"></i></a>
-                <a href="mailto:Howard.grasson@yahoo.com"> <i className="ion-ios-email"></i></a>      
-              </div>
-          </figcaption>
-      </figure>
-      <figure className="card"><img src="https://images.pexels.com/photos/555790/pexels-photo-555790.png?auto=compress&cs=tinysrgb&h=350" alt="profile-sample1" className="background"/><img src="https://images.pexels.com/photos/555790/pexels-photo-555790.png?auto=compress&cs=tinysrgb&h=350" alt="profile-sample1" className="profile"/>
-          <figcaption>
-              <h3>John Smith<span>Guitar</span></h3>
-              <div className="icons">
-                <a href="https://soundcloud.com/"> <i className="ion-headphone"></i></a>
-                <a href="mailto:webmaster@example.com"> <i className="ion-ios-email"></i></a>      
-              </div>
-          </figcaption>
-      </figure>
-      <figure className="card"><img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&h=350" alt="profile-sample1" className="background"/><img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&h=350" alt="profile-sample1" className="profile"/>
-          <figcaption>
-              <h3>John Smith<span>Guitar</span></h3>
-              <div className="icons">
-                <a href="https://soundcloud.com/"> <i className="ion-headphone"></i></a>
-                <a href="mailto:webmaster@example.com"> <i className="ion-ios-email"></i></a>      
-              </div>
-          </figcaption>
-      </figure>
+        {
+          guitarists
+        }
       </div>
     </Slider>
     );
