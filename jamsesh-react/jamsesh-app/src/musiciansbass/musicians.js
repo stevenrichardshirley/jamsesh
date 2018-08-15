@@ -8,6 +8,22 @@ import Slider from "react-slick";
 
 
 class MusiciansBass extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      users: null
+    }
+  }
+
+  componentDidMount() {
+    firebase.database()
+      .ref('users')
+      .orderByChild('instrument')
+      .equalTo('bass')
+      .on('value', (users) => {
+        this.setState({ users: users.val() })
+      })
+  }
   render() {
     
     var settings = {
@@ -60,7 +76,29 @@ class MusiciansBass extends React.Component {
   //   //     })
   //   // });
   
-
+    const users = this.state.users
+    const bassists = []
+    if (users) {
+      for (let p in users) {
+        if (users.hasOwnProperty(p)) {
+            // do stuff
+            const user = users[p]
+            bassists.push(
+              <figure key={p} className="card">
+              <img src="https://images.pexels.com/photos/633432/pexels-photo-633432.jpeg?auto=compress&cs=tinysrgb&h=350" alt="profile-sample1" className="background"/>
+              <img src={user.photoUrl} height='150' width='150' alt="profile-sample1" className="profile"/>
+                <figcaption>
+                    <h3>{user.name}<span>Bassist</span></h3>
+                    <div className="icons">
+                      <a href="https://soundcloud.com/"> <i className="ion-headphone"></i></a>
+                      <a href={`mailto:${user.email}`}> <i className="ion-ios-email"></i></a>      
+                    </div>
+                </figcaption>
+            </figure>
+            )
+        }
+      }
+    }
 
   
     
@@ -78,33 +116,9 @@ class MusiciansBass extends React.Component {
     return (
       <Slider {...settings}>
       <div>
-      <figure className="card"><img src="https://images.pexels.com/photos/633432/pexels-photo-633432.jpeg?auto=compress&cs=tinysrgb&h=350" alt="profile-sample1" className="background"/><img src="https://images.pexels.com/photos/633432/pexels-photo-633432.jpeg?auto=compress&cs=tinysrgb&h=350" alt="profile-sample1" className="profile"/>
-          <figcaption>
-              <h3>Grover Dink<span>Bassist</span></h3>
-              <div className="icons">
-                <a href="https://soundcloud.com/"> <i className="ion-headphone"></i></a>
-                <a href="mailto:groverdink@yahoo.com"> <i className="ion-ios-email"></i></a>      
-              </div>
-          </figcaption>
-      </figure>
-      <figure className="card"><img src="https://images.pexels.com/photos/428361/pexels-photo-428361.jpeg?auto=compress&cs=tinysrgb&h=350" alt="profile-sample1" className="background"/><img src="https://images.pexels.com/photos/428361/pexels-photo-428361.jpeg?auto=compress&cs=tinysrgb&h=350" alt="profile-sample1" className="profile"/>
-          <figcaption>
-              <h3>Matthew Wrathborn<span>Bassist</span></h3>
-              <div className="icons">
-                <a href="https://soundcloud.com/"> <i className="ion-headphone"></i></a>
-                <a href="mailto:mwrathborn@yahoo.com"> <i className="ion-ios-email"></i></a>      
-              </div>
-          </figcaption>
-      </figure>
-      <figure className="card"><img src="https://images.pexels.com/photos/1031081/pexels-photo-1031081.jpeg?auto=compress&cs=tinysrgb&h=350" alt="profile-sample1" className="background"/><img src="https://images.pexels.com/photos/1031081/pexels-photo-1031081.jpeg?auto=compress&cs=tinysrgb&h=350" alt="profile-sample1" className="profile"/>
-          <figcaption>
-              <h3>Milicent Miller<span>Bassist</span></h3>
-              <div className="icons">
-                <a href="https://soundcloud.com/"> <i className="ion-headphone"></i></a>
-                <a href="mailto:Milner_Milner@yahoo.com"> <i className="ion-ios-email"></i></a>      
-              </div>
-          </figcaption>
-      </figure>
+        {
+          bassists
+        }
       </div>
     </Slider>
     );

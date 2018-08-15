@@ -1,5 +1,6 @@
 import React from 'react';
 import firebase from 'firebase'
+import history from '../../history'
 import "./signup.css";
 
 class Signup extends React.Component {
@@ -26,7 +27,7 @@ class Signup extends React.Component {
     firebase.database()
       .ref(`users/${uid}`)
       .set({
-        username: name,
+        name,
         email,
         photoUrl,
         music,
@@ -37,6 +38,7 @@ class Signup extends React.Component {
           return console.log(`error occured while saving user data. err: ${err}`)
         }
         console.log('User saved successfully!')
+        history.push('/instruments')
       })
   }
 
