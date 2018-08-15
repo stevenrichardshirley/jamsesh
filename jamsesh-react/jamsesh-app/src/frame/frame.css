@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Concert+One%7COrbitron");
+@import url("https://fonts.googleapis.com/css?family=Unica+One");
 /* HEADER */
 
 #masterhead {
@@ -43,7 +44,7 @@
   color: black;
   background: white;
 }
-#button { 
+#button {
   margin-left: 60%;
   margin-top : 10px;
   height: 50px;
@@ -110,6 +111,43 @@ border-top: solid white 1px;
 #footertext {
   margin-top: 35px;
 }
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 
 /* HOVER OVER ANIMATIONS */
 

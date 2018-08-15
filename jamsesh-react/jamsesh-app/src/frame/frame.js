@@ -47,7 +47,7 @@ class Frame extends React.Component {
       }
     })
   }
-  
+
   // Make sure we un-register Firebase observers when the component unmounts.
   componentWillUnmount() {
     this.unregisterAuthObserver()
@@ -58,7 +58,6 @@ class Frame extends React.Component {
       <div>
         <header id="masterhead">
           <a href="/" id="jamlogo" className="hvr-back-pulse">J</a>
-           <a href="/signedIn" id="button" className="hvr-back-pulse">Sign Up!</a>
           <div id="startup">
             <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} className="hvr-back-pulse" id="login"/>
             {/* <div id="loginwrap"><a href="" className="hvr-back-pulse" id="login">LOG IN</a></div> */}

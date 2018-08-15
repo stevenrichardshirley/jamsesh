@@ -57,10 +57,10 @@ class Signup extends React.Component {
     return (
       <div className="panel-body">
         <form role="form">
-          <h3><strong>About You</strong></h3>
+          <h3 id="aboutu"><strong>About You</strong></h3>
           <h3>Name (Required)</h3>
           <input type="text" name="" id="name" className="form-control" value={name} onChange={this.handleTextInputChange} required />
-          <h3>Email(Required)</h3>
+          <h3>Email (Required)</h3>
           <input type="email" name="" id="email" className="form-control" value={email} onChange={this.onTextInputChange} required ></input>
 
           <h3>Link to Photo Image (Required)</h3>
@@ -89,7 +89,7 @@ class Signup extends React.Component {
           </select>
           <br></br>
 
-          <button onClick={this.onSubmit} id="submit" className="btn btn-primary">Submit</button>
+          <button onClick={this.onSubmit} id="submit" className="btn btn-primary" class="hvr-back-pulse">Submit</button>
         </form>
       </div>
     )

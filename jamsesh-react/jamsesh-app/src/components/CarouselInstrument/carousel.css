@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Unica+One");
 
 .instwrap {
 background: black;
@@ -12,9 +13,19 @@ height: 510px;
     width: 250px;
     height: 250px;
     padding-left: 10px;
-    margin-top: 120px;
+    margin-top: 85px;
+    transition: transform .2s;
+  }
+
+  .InstImage:hover {
+  transform: scale(1.1);
+  opacity: .8
   }
 
   .instbackground {
 
+  }
+
+  .jamsubtitles {
+    color: white;
   }
