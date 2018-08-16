@@ -5,12 +5,12 @@ import firebase from 'firebase';
 import history from '../history'
 
 const config = {
-  apiKey: "AIzaSyA8j7FJgRdaFGdJVYskvUJO19O6O_RM_lw",
-  authDomain: "jamsesh-c43bb.firebaseapp.com",
-  databaseURL: "https://jamsesh-c43bb.firebaseio.com",
-  projectId: "jamsesh-c43bb",
-  storageBucket: "jamsesh-c43bb.appspot.com",
-  messagingSenderId: "84443028283"
+  apiKey: "AIzaSyCyyHuBFXC51HGQvhJNQfDvhOcAOzApjtk",
+  authDomain: "jamsesh2018.firebaseapp.com",
+  databaseURL: "https://jamsesh2018.firebaseio.com",
+  projectId: "jamsesh2018",
+  storageBucket: "",
+  messagingSenderId: "603681166914"
  };
   firebase.initializeApp(config);
 

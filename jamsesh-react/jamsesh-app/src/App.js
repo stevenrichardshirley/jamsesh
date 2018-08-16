@@ -13,7 +13,7 @@ import MusiciansKeyboard from './musicianskeyboard/musicians.js';
 import MusiciansDrums from './musiciansdrums/musicians.js';
 import MusiciansMic from './musiciansmic/musicians.js';
 import { Router, Route, Link } from "react-router-dom";
-import Card from './components/Card/card.js';
+import Card from './components/card/card.js';
 class App extends Component {
   render() {
     return (
